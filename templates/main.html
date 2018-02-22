@@ -7,8 +7,13 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
 	<link rel="shortcut icon" type="text/css" href="{{url_for('static',filename='favicon.ico')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+   <script type="text/javascript" src="{{url_for('static',filename='js/jquery-3.3.1.min.js')}}"></script>
+   <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
 </head>
 <body>
-<p>Testing basic flask app</p>
+<p>Login and signup is my next task</p>
+
+{% block body %}{% endblock %}
 </body>
 </html>
