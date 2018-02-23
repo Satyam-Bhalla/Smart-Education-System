@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect,url_for, request, session, fl
 from wtforms import Form, BooleanField, TextField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from connecting_db import Connection
+import gc
 
 app = Flask(__name__)
 
@@ -19,35 +20,49 @@ def dashboard():
 
 @app.route('/login/', methods=["GET","POST"])
 def login_page():
-
     error = ''
     try:
-	
+        c, conn = Connection()
         if request.method == "POST":
-		
             attempted_username = request.form['username']
             attempted_password = request.form['password']
-
-            #flash(attempted_username)
-            #flash(attempted_password)
-
-            if attempted_username == "admin" and attempted_password == "password":
-                return redirect(url_for('dashboard'))
-				
+            attempted_firstname = request.form['firstname']
+            attempted_lastname = request.form['lastname']
+            attempted_email = request.form['email']
+            attempted_passwd = request.form['passwd']
+            if not attempted_firstname:
+                if attempted_username == "admin" and attempted_password == "password":
+                    return redirect(url_for('dashboard'))
+                    
+                else:
+                    error = "Invalid credentials. Try Again."
             else:
-                error = "Invalid credentials. Try Again."
-
+                x = c.execute("SELECT * from users where email=(?)",attempted_email)
+                if int(len(x))>0:
+                    error = "User already exist"
+                    return render_template("logsign.html",error=error)
+                else:
+                    c.execute("INSERT INTO users(first_name,last_name,email, password) VALUES (?,?,?,?)",(attempted_firstname,attempted_lastname,attempted_email,attempted_passwd))
+                    c.commit()
+                    return render_template(url_for('dashboard'))
+        c.close()
+        conn.close()
+        # gc.close()
         return render_template("logsign.html", error = error)
 
     except Exception as e:
         #flash(e)
-        return render_template("logsign.html", error = error)  
+        print(e)
+        return render_template("logsign.html", error = e)  
 
-@app.route('/signupp/', methods=["GET","POST"])
+
+
+@app.route('/signup/', methods=["GET","POST"])
 def register_user():
     try:
         c, conn = Connection()
-        return("okay")
+        
+        gc.collect()
     except Exception as e:
         return(str(e))
         

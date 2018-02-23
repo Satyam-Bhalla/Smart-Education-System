@@ -22,22 +22,22 @@
           <form action="" method="post">
           
             <div class="field-wrap">
-            <label>
+            <p style="color:white">
               Email Address<span class="req">*</span>
-            </label>
+            </p>
             <input type="text" id="username" name="username" required autocomplete="off" value="{{request.form.username}}"/>
           </div>
           
           <div class="field-wrap">
-            <label>
+            <p style="color:white">
               Password<span class="req">*</span>
-            </label>
+            </p>
             <input type="password" id="password" name="password" required autocomplete="off" value="{{request.form.password}}"/>
           </div>
           
           <button class="button button-block" type="submit" />Log In</button>
           {% if error %}
-            <p class="error"><strong>Error:</strong> {{ error }}</p>
+            <p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>
           {% endif %}
           </form>
 
@@ -46,47 +46,41 @@
         <div id="signup">   
           <h1>Sign Up for Free</h1>
           
-          <form action="/" method="post">
+          <form action="" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
-              <label>
+              <p style="color:white">
                 First Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" />
+              </p>
+              <input type="text" required autocomplete="off" name="firstname" />
             </div>
         
             <div class="field-wrap">
-              <label>
+              <p style="color:white">
                 Last Name<span class="req">*</span>
-              </label>
-              <input type="text"required autocomplete="off"/>
+              </p>
+              <input type="text"required autocomplete="off" name="lastname"/>
             </div>
           </div>
 
           <div class="field-wrap">
-            <label>
+            <p style="color:white">
               Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
+            </p>
+            <input type="email" required autocomplete="off" name="email"/>
           </div>
           
           <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Confirm Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
+            <p style="color:white">
+              Set Password<span class="req">*</span>
+            </p>
+            <input type="password" name="passwd" required autocomplete="off"/>
+          </div>  
           <button type="submit" class="button button-block"/>Get Started</button>
-          
+          {% if error %}
+            <p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>
+          {% endif %}
           </form>
 
         </div>
