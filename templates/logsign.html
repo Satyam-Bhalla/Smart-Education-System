@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/SignUp</title>
+
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/logsign.css')}}">
+  
+</head>
+<body>
+
+<div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#login">Log In</a></li>
+        <li class="tab"><a href="#signup">Sign Up</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="text" id="username" name="username" required autocomplete="off" value="{{request.form.username}}"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" id="password" name="password" required autocomplete="off" value="{{request.form.password}}"/>
+          </div>
+          
+          <button class="button button-block" type="submit" />Log In</button>
+          {% if error %}
+            <p class="error"><strong>Error:</strong> {{ error }}</p>
+          {% endif %}
+          </form>
+
+        </div>
+
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Confirm Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Started</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='js/logsign.js')}}"></script>
+</body>
+</html>
