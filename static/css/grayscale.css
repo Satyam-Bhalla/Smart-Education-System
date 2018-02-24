@@ -194,8 +194,8 @@ a:focus, a:hover {
 }
 
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .download-section {
@@ -216,7 +216,7 @@ a:focus, a:hover {
 @media (min-width: 992px) {
   .content-section {
     padding-top: 75px;
-    padding-bottom: 250px;
+    padding-bottom: 100px;
   }
   #map {
     height: 350px;

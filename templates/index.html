@@ -7,11 +7,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto"> 
-              <h1 class="brand-heading">Vikas</h1>
-              <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. </p>
+              <h1 class="brand-name" style="color:lightyellow">LEARN WITH US TO</h1>
+              <h1 class="intro-text" id="appid" style="color:lightyellow"></h1>
+              <h1 class="brand-name" style="color:lightyellow">AND MAKE THE WORLD MORE INTELLIGENT!!</h1>
               <a href="#about" id="f_p_btn" class="btn btn-circle js-scroll-trigger">
                 <span><strong >V</strong></span>
               </a>
@@ -28,12 +26,8 @@
             <iframe width="100%" height="130%" src="https://www.youtube.com/embed/oa-2KbM_cXQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
           <div class="col-md-6  mx-auto">
-            <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Our Goal</h2>
+            <p class="intro-text">Our main goal is to provide free and quality education to everyone.We don't judge you or force you to learn some specific or predefined subjects which you don't wanna learn.We will help you to learn your favorite subjects with more interesting content and you can analyze your own perfoprmance.You will learn some boring subjects too with an intelligent way so that you can perform better.</p>
               
           </div>
         </div>
@@ -81,6 +75,32 @@
         </div>
       </div>
     </section>
+<script src="{{url_for('static',filename='js/typewriter.js')}}"></script>
+<script>
+var app = document.getElementById('appid');
 
+var typewriter = new Typewriter(app, {
+    loop: true,
+    blinkSpeed: 100,
+    deleteSpeed: 50,
+    typingSpeed: 60
+
+});
+
+typewriter.typeString('MAKE BETTER DECISIONS IN LIFE')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('LEARN AT YOUR OWN PACE')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('WE CAN TEACH YOU ACCORDING TO YOUR INTELLIGENCE')
+    .pauseFor(2500)
+    .deleteChars(12)
+    .typeString('INTERESTS')
+    .pauseFor(2500)
+    .deleteChars(27)
+    .typeString('WITHOUT COMPARING YOU WITH OTHERS')
+    .pauseFor(2500)
+    .start();
+</script>
  {% endblock %}
-
