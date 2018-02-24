@@ -148,7 +148,7 @@ a:focus, a:hover {
 @media (min-width: 768px) {
   .masthead {
     height: 100%;
-    padding: 0;
+    padding: 10px;
   }
   .masthead .intro-body .brand-heading {
     font-size: 100px;
@@ -169,16 +169,28 @@ a:focus, a:hover {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   border-radius: 100% !important;
   background: transparent;
 }
+ 
+#f_p_btn{
+  top: 75px;
+  color: white;
+  border: 2px solid white;
+}
 
 .btn-circle:focus, .btn-circle:hover {
-  color: white;
+  /*color: white;*/
+  border: 2px solid #02b3e4;
   outline: none;
   background: rgba(2, 179, 228, 0.1);
+}
+
+#f_p_btn:focus, #f_p_btn:hover {
+  /*color: white;*/
+  border: 2px solid #02b3e4;
 }
 
 .content-section {
@@ -203,8 +215,8 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 75px;
+    padding-bottom: 250px;
   }
   #map {
     height: 350px;

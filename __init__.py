@@ -18,6 +18,41 @@ def dashboard():
     except Exception as e:
         return render_template("500.html")
 
+
+@app.route('/signup/',methods=["GET","POST"])
+def signup_page():
+    error = ''
+    if request.method == "POST":
+        attempted_firstname = request.form['firstname']
+        attempted_lastname = request.form['lastname']
+        attempted_email = request.form['email']
+        attempted_passwd = request.form['passwd']
+        try:
+            c, conn = Connection()
+            print(1)
+            x = c.execute("SELECT email from users where email=?",(attempted_email,))
+            print(2)
+            print(x.rowcount)
+            print(dir(x))
+            if x.rowcount > 0:
+                error = "User already exists"
+                c.close()
+                conn.close()
+                print(11)
+                return render_template("logsign.html",error=error)
+            else:
+                c, conn = Connection()
+                c.execute("INSERT INTO users(first_name,last_name,email, password) VALUES (?,?,?,?)",(attempted_firstname,attempted_lastname,attempted_email,attempted_passwd))
+                print(3)
+                conn.commit()
+                c.close()
+                conn.close()
+                return redirect('/dashboard/')
+        except Exception as e:
+            error = "Connection error"
+            return render_template("logsign.html",error=e)
+
+
 @app.route('/login/', methods=["GET","POST"])
 def login_page():
     error = ''
@@ -26,25 +61,19 @@ def login_page():
         if request.method == "POST":
             attempted_username = request.form['username']
             attempted_password = request.form['password']
-            attempted_firstname = request.form['firstname']
-            attempted_lastname = request.form['lastname']
-            attempted_email = request.form['email']
-            attempted_passwd = request.form['passwd']
-            if not attempted_firstname:
-                if attempted_username == "admin" and attempted_password == "password":
-                    return redirect(url_for('dashboard'))
-                    
+            print(attempted_username)
+            x = c.execute("SELECT * FROM users WHERE email=? AND password=?",(attempted_username,attempted_password,))
+            for i in x:
+                if len(i)>0:
+                    c.close()
+                    conn.close()
+                    return render_template("dashboard.html")
                 else:
-                    error = "Invalid credentials. Try Again."
-            else:
-                x = c.execute("SELECT * from users where email=(?)",attempted_email)
-                if int(len(x))>0:
-                    error = "User already exist"
+                    error = "User doesn't exist"
+                    c.close()
+                    conn.close()
                     return render_template("logsign.html",error=error)
-                else:
-                    c.execute("INSERT INTO users(first_name,last_name,email, password) VALUES (?,?,?,?)",(attempted_firstname,attempted_lastname,attempted_email,attempted_passwd))
-                    c.commit()
-                    return render_template(url_for('dashboard'))
+        # else:
         c.close()
         conn.close()
         # gc.close()
@@ -53,18 +82,7 @@ def login_page():
     except Exception as e:
         #flash(e)
         print(e)
-        return render_template("logsign.html", error = e)  
-
-
-
-@app.route('/signup/', methods=["GET","POST"])
-def register_user():
-    try:
-        c, conn = Connection()
-        
-        gc.collect()
-    except Exception as e:
-        return(str(e))
+        return render_template("logsign.html", error = e)
         
 
 

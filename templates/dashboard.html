@@ -1,8 +1,52 @@
-{% extends "main.html" %}
+{% extends "layout.html" %}
 
-{% block body %}
 
-<p>I am on dashboard</p>
-<p>Login and signup is my next task</p>
 
+{%block body %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<br>
+<section style="padding-top: 5%; padding-bottom: 4px;" class="content-section text-center">
+	<div class="jumbotron">
+      <div class="row" style="height: 390px;">
+        <!-- question part -->
+        <div style="background: grey;" class="col-lg-6 mx-auto">
+          <form action="/" style="margin-top: 110px;" method="post">
+            <div class="field-wrap">
+              <label>
+                Which company did Valve cooperate with in the creation of the Vive?
+              </label>
+              <p>Hint : ['Oculus', 'Google', 'Razer', 'HTC']</p>
+              <input type="text" name="answer" required autocomplete="off"/>
+              <input type="hidden" name="id" value=""/>
+              <input type="hidden" name="difficulty" value=""/>
+              <input type="hidden" name="subject" value=""/>
+              <button class="button button-block" type="submit" />Submit</button>
+            </div>
+          </form>
+        </div>
+        <!-- suggestion and response part -->
+        <div style="background: black;" class="col-lg-5 mx-auto">
+          <div class="row">
+            
+          </div>
+          <div id="plot" height="100px" class="row">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<script type="text/javascript">
+  var trace = {
+    x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 
+    y: [1, 2, 2, 3, 4, 5, 7, 9, 9, 8, 8, 8,7,8,9,9,9,10,10,9], 
+    type: 'scatter'
+  };
+  var layout = {
+    width: 550,
+    height: 390
+  };
+  data = [trace];
+  Plotly.newPlot('plot', data, layout);
+</script>>
 {% endblock %}
