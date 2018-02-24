@@ -35,9 +35,15 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/login/">Login/SignUp</a>
-            </li>
+            {% if 'user' not in session %}
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/login/">Login/SignUp</a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/logout/">Sign Out</a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
