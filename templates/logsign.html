@@ -1,94 +1,82 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Login/SignUp</title>
+{% extends "layout.html" %}
 
-  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/logsign.css')}}">
-  
-</head>
-<body>
+{% block title %}
+    Login/SignUp
+{% endblock %}
 
-<div class="form">
-      
-      <ul class="tab-group">
-        <li class="tab active"><a href="#login">Log In</a></li>
-        <li class="tab"><a href="#signup">Sign Up</a></li>
-      </ul>
-      
-      <div class="tab-content">
-        <div id="login">   
-          <h1>Welcome Back!</h1>
-          
-          <form action="" method="post">
-          
-            <div class="field-wrap">
-            <p style="color:white">
-              Email Address<span class="req">*</span>
-            </p>
-            <input type="text" id="username" name="username" required autocomplete="off" value="{{request.form.username}}"/>
-          </div>
-          
-          <div class="field-wrap">
-            <p style="color:white">
-              Password<span class="req">*</span>
-            </p>
-            <input type="password" id="password" name="password" required autocomplete="off" value="{{request.form.password}}"/>
-          </div>
-          
-          <button class="button button-block" type="submit" />Log In</button>
-          {% if error %}
-            <p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>
-          {% endif %}
-          </form>
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/logsign.css')}}">
+    <style type="text/css">
+        #mainNav{
+            background-color: #02b3e4
+        }
+    </style>
+{% endblock %}
 
-        </div>
+{% block body %}
+    <div class="form">
+        <ul class="tab-group">
+            <li class="tab active"><a href="#login">Log In</a></li>
+            <li class="tab"><a href="#signup">Sign Up</a></li>
+        </ul>
+        <div class="tab-content">
+            <!-- Login -->
+            <div id="login">   
+                <h1>Welcome Back!</h1>
+                <form action="" method="post">
+                    <div class="field-wrap">
+                        <p style="color:white">Email Address<span class="req">*</span></p>
+                        <input type="text" id="username" name="username" required autocomplete="off" value="{{request.form.username}}"/>
+                    </div>
 
-        <div id="signup">   
-          <h1>Sign Up for Free</h1>
-          
-          <form action="/signup/" method="post">
-          
-          <div class="top-row">
-            <div class="field-wrap">
-              <p style="color:white">
-                First Name<span class="req">*</span>
-              </p>
-              <input type="text" required autocomplete="off" name="firstname" value="{{request.form.firstname}}" />
+                    <div class="field-wrap">
+                    <p style="color:white">Password<span class="req">*</span></p>
+                    <input type="password" id="password" name="password" required autocomplete="off" value="{{request.form.password}}"/>
+                    </div>
+                    <button class="button button-block" type="submit" />Log In</button>
+                    {% if error %}<p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>{% endif %}
+                </form>
             </div>
-        
-            <div class="field-wrap">
-              <p style="color:white">
-                Last Name<span class="req">*</span>
-              </p>
-              <input type="text"required autocomplete="off" name="lastname" value="{{request.form.lastname}}"/>
+            <!-- Sign Up -->
+            <div id="signup">   
+                <h1>Sign Up for Free</h1>
+                <form action="/signup/" method="post">
+                    <div class="top-row">
+                        <!-- FName -->
+                        <div class="field-wrap">
+                            <p style="color:white">First Name<span class="req">*</span></p>
+                            <input type="text" required autocomplete="off" name="firstname" value="{{request.form.firstname}}" />
+                        </div>
+                        <!-- LName -->
+                        <div class="field-wrap">
+                            <p style="color:white">Last Name<span class="req">*</span></p>
+                            <input type="text"required autocomplete="off" name="lastname" value="{{request.form.lastname}}"/>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="field-wrap">
+                        <p style="color:white">Email Address<span class="req">*</span></p>
+                        <input type="email" required autocomplete="off" name="email" value="{{request.form.email}}"/>
+                    </div>
+                    <!-- Password -->
+                    <div class="field-wrap">
+                        <p style="color:white">Password<span class="req">*</span></p>
+                        <input type="password" name="password" required autocomplete="off" value="{{request.form.passwd}}"/>
+                    </div>
+                    <!-- Confirm Password -->
+                    <div class="field-wrap">
+                        <p style="color:white">Confirm Password<span class="req">*</span></p>
+                        <input type="password" name="password" required autocomplete="off" value="{{request.form.passwd}}"/>
+                    </div>
+                    <button type="submit" class="button button-block"/>Get Started</button>
+                    {% if error %}<p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>{% endif %}
+                </form>
             </div>
-          </div>
+        </div><!-- tab-content -->
+    </div> <!-- /form -->
+{% endblock %}
 
-          <div class="field-wrap">
-            <p style="color:white">
-              Email Address<span class="req">*</span>
-            </p>
-            <input type="email" required autocomplete="off" name="email" value="{{request.form.email}}"/>
-          </div>
-          
-          <div class="field-wrap">
-            <p style="color:white">
-              Set Password<span class="req">*</span>
-            </p>
-            <input type="password" name="passwd" required autocomplete="off" value="{{request.form.passwd}}"/>
-          </div>  
-          <button type="submit" class="button button-block"/>Get Started</button>
-          {% if error %}
-            <p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>
-          {% endif %}
-          </form>
-
-        </div>
-        
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
-<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
-<script src="{{url_for('static',filename='js/logsign.js')}}"></script>
-</body>
-</html>
+{% block scripts %}
+    <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/logsign.js')}}"></script>
+{% endblock %}
