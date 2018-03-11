@@ -1,6 +1,12 @@
 {% extends "layout.html" %}
 
-{%block body %}
+{% block title %}
+    Vikas Education System
+{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
     <!-- Intro Header -->
     <header class="masthead">
       <div class="intro-body">
@@ -19,6 +25,7 @@
       </div>
     </header>
     
+    <!-- About Section -->
     <section id="about" style="background: white; color: black;" class="content-section text-center">
       <div class="container">
         <div class="row">
@@ -73,32 +80,40 @@
         </div>
       </div>
     </section>
-<script src="{{url_for('static',filename='js/typewriter.js')}}"></script>
-<script>
-var app = document.getElementById('appid');
 
-var typewriter = new Typewriter(app, {
-    loop: true,
-    blinkSpeed: 100,
-    deleteSpeed: 50,
-    typingSpeed: 60
-
-});
-
-typewriter.typeString('MAKE BETTER DECISIONS IN LIFE')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('LEARN AT YOUR OWN PACE')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('WE CAN TEACH YOU ACCORDING TO YOUR INTELLIGENCE')
-    .pauseFor(2500)
-    .deleteChars(12)
-    .typeString('INTERESTS')
-    .pauseFor(2500)
-    .deleteChars(27)
-    .typeString('WITHOUT COMPARING YOU WITH OTHERS')
-    .pauseFor(2500)
-    .start();
-</script>
  {% endblock %}
+
+
+{% block scripts %}
+    <script src="{{url_for('static',filename='js/typewriter.js')}}"></script>
+    <script>
+      var app = document.getElementById('appid');
+
+      var typewriter = new Typewriter(app, {
+          loop: true,
+          blinkSpeed: 100,
+          deleteSpeed: 50,
+          typingSpeed: 60
+
+      });
+
+      typewriter.typeString('MAKE BETTER DECISIONS IN LIFE')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('LEARN AT YOUR OWN PACE')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('WE CAN TEACH YOU ACCORDING TO YOUR INTELLIGENCE')
+          .pauseFor(2500)
+          .deleteChars(12)
+          .typeString('INTERESTS')
+          .pauseFor(2500)
+          .deleteChars(27)
+          .typeString('WITHOUT COMPARING YOU WITH OTHERS')
+          .pauseFor(2500)
+          .start();
+    </script>
+
+    <script type="text/javascript" src="{{url_for('static',filename='js/grayscale.js')}}"></script>
+
+{% endblock %}

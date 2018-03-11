@@ -3,43 +3,42 @@ from flask import Flask, render_template, redirect,url_for, request, session, fl
 from wtforms import Form, BooleanField, TextField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from connecting_db import Connection
-import gc
-import os
-import ast
-import random
+from os import urandom
+from ast import literal_eval
+from random import shuffle, randrange
 
 app = Flask(__name__)
-app.secret_key = os.urandom(134)
 
 solved = []
 
-
-@app.route('/')
-def index():
-    return render_template("index.html")
-
 def tellQues(qNo):
+    '''
+        takes a question number as parameter
+        returns the question as tuple
+    '''
     c, conn = Connection()
     x = c.execute("SELECT * from question_answers where id=?",(qNo,))
     for i in x:
         if len(i)>0:
             i = list(i)
-            i[3] = ast.literal_eval(i[3])
+            i[3] = literal_eval(i[3])
             ra = i.pop(2)
             i[2].append(ra)
-            random.shuffle(i[2])
+            shuffle(i[2])
             return i
     c.close()
     conn.close()
 
+@app.route('/')
+def index():
+    return render_template("index.html")
 
-
-@app.route('/dashboard/' ,methods=["GET","POST"])
+@app.route('/dashboard' ,methods=["GET","POST"])
 def dashboard():
     try:
         if 'user' in session:
-            subject = random.randrange(1,4)
-            ques = random.randrange(((90*(subject-1))+1), ((90*(subject-1))+31))
+            subject = randrange(1,4)
+            ques = randrange(((90*(subject-1))+1), ((90*(subject-1))+31))
             return render_template("dashboard.html",question=tellQues(ques))
         else:
             return render_template("logsign.html")
@@ -47,7 +46,7 @@ def dashboard():
         return render_template("500.html")
 
 
-@app.route('/signup/',methods=["GET","POST"])
+@app.route('/signup',methods=["GET","POST"])
 def signup_page():
     error = ''
     if request.method == "POST":
@@ -80,7 +79,7 @@ def signup_page():
             return render_template("logsign.html",error=e)
 
 
-@app.route('/quesCheck/', methods=["POST"])
+@app.route('/quesCheck', methods=["POST"])
 def quesCheck():
     if request.method == "POST":
         quesans = request.form['ans']
@@ -99,14 +98,21 @@ def quesCheck():
                 if j not in [0,3,6]:
                     j-=1
                 solved.append(0)
-        ques = random.randrange((30*j)+1,(30*(j+1))+1)
+        ques = randrange((30*j)+1,(30*(j+1))+1)
         print(solved)
         print(ques)
         return render_template("dashboard.html",question=tellQues(ques),solved=solved)
 
+'''
+@app.route('/login', methods=["GET","POST"])
+def login_page():
+    error = ''
+    if request.method == "POST":
+        pass
+    return render_template("")
+'''
 
-
-@app.route('/login/', methods=["GET","POST"])
+@app.route('/login', methods=["GET","POST"])
 def login_page():
     error = ''
     try:
@@ -132,16 +138,14 @@ def login_page():
         # else:
         c.close()
         conn.close()
-        # gc.close()
         return render_template("logsign.html", error = error)
 
     except Exception as e:
         #flash(e)
         print(e)
         return render_template("logsign.html", error = e)
-        
 
-@app.route("/logout/")
+@app.route("/logout")
 def logout():
     solved = []
     session.pop('user', None)
@@ -151,4 +155,8 @@ def logout():
 def page_not_found(e):
     return render_template("404.html")
 
-app.run(debug=True)
+if __name__ == "__main__":
+    secret_key = urandom(134)
+    print("\n Secret_key = ", secret_key, " \n")
+    app.secret_key = secret_key
+    app.run(debug=True)
