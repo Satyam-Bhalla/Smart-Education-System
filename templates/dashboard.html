@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
 
+{% block title %}
+  Logged in as {{ session['user'] }}
+{% endblock %}
 
+{% block stylesheets %}{% endblock %}
 
 {%block body %}
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <br>
 <section style="padding-top: 5%; padding-bottom: 4px;" class="content-section text-center">
 	<div class="jumbotron">
@@ -39,24 +42,28 @@
       </div>
     </div>
 </section>
-<script type="text/javascript">
-  var trace = {
-    x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 
-    y: {{solved}}, 
-    type: 'scatter'
-  };
-  var layout = {
-    width: 550,
-    height: 390,
-    title: 'Performance',
-    xaxis: {
-      title: 'No. of Questions'
-    },
-    yaxis: {
-      title: 'Accuracy'
-    }
-  };
-  data = [trace];
-  Plotly.newPlot('plot', data, layout);
-</script>>
+{% endblock %}
+
+{% block scripts %}
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript">
+    var trace = {
+      x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 
+      y: {{solved}}, 
+      type: 'scatter'
+    };
+    var layout = {
+      width: 550,
+      height: 390,
+      title: 'Performance',
+      xaxis: {
+        title: 'No. of Questions'
+      },
+      yaxis: {
+        title: 'Accuracy'
+      }
+    };
+    data = [trace];
+    Plotly.newPlot('plot', data, layout);
+  </script>
 {% endblock %}
