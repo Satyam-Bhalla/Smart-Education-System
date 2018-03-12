@@ -1,94 +1,115 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Login/SignUp</title>
+{% extends "layout.html" %}
 
-  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/logsign.css')}}">
-  
-</head>
-<body>
+{% block title %}
+    Login/SignUp
+{% endblock %}
 
-<div class="form">
-      
-      <ul class="tab-group">
-        <li class="tab active"><a href="#login">Log In</a></li>
-        <li class="tab"><a href="#signup">Sign Up</a></li>
-      </ul>
-      
-      <div class="tab-content">
-        <div id="login">   
-          <h1>Welcome Back!</h1>
-          
-          <form action="" method="post">
-          
-            <div class="field-wrap">
-            <p style="color:white">
-              Email Address<span class="req">*</span>
-            </p>
-            <input type="text" id="username" name="username" required autocomplete="off" value="{{request.form.username}}"/>
-          </div>
-          
-          <div class="field-wrap">
-            <p style="color:white">
-              Password<span class="req">*</span>
-            </p>
-            <input type="password" id="password" name="password" required autocomplete="off" value="{{request.form.password}}"/>
-          </div>
-          
-          <button class="button button-block" type="submit" />Log In</button>
-          {% if error %}
-            <p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>
-          {% endif %}
-          </form>
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/logsign.css')}}">
+    <style type="text/css">
+        #mainNav{
+            background-color: #02b3e4
+        }
+    </style>
+{% endblock %}
 
-        </div>
-
-        <div id="signup">   
-          <h1>Sign Up for Free</h1>
-          
-          <form action="/signup/" method="post">
-          
-          <div class="top-row">
-            <div class="field-wrap">
-              <p style="color:white">
-                First Name<span class="req">*</span>
-              </p>
-              <input type="text" required autocomplete="off" name="firstname" value="{{request.form.firstname}}" />
+{% block body %}
+    <div class="form">
+        <ul class="tab-group">
+            <li class="tab active"><a href="#login">Log In</a></li>
+            <li class="tab"><a href="#signup">Sign Up</a></li>
+        </ul>
+        <div class="tab-content">
+            <!-- Login -->
+            <div id="login">   
+                <h1>Welcome Back!</h1>
+                <form id="logform" action="/logsign" method="post">
+                    {% if error %}
+                        <p style="color: skyblue;"><strong>Error:</strong> {{ error }}</p>
+                    {% elif msg %}
+                        <p style="color: green;"><strong></strong> {{ msg }}</p>
+                    {% endif %}
+                    <!-- username -->
+                    <div class="field-wrap">
+                        <!-- <p style="color:white">Email Address<span class="req">*</span></p> -->
+                        <input type="text" id="username" name="username" required autocomplete="off" value="{{request.form.username}}" placeholder="Email Address" />
+                    </div>
+                    <!-- password -->
+                    <div class="field-wrap">
+                        <!-- <p style="color:white">Password<span class="req">*</span></p> -->
+                        <input type="password" id="lpassword" placeholder="Password" name="password" required autocomplete="off" value=""/>
+                    </div>
+                    <!-- Parent or Student -->
+                    <div class="field-wrap">
+                        <p style="color:white; float: left; margin-right: 20px;">Role<span class="req">*</span></p>
+                        <select id="lrole" name="role" value="{{request.form.role}}" style="font-size: larger; margin-top: 5px;">
+                            <option value="0" hidden></option>
+                            <option value="parent">Parent</option>
+                            <option value="students">Student</option>
+                        </select>
+                        <p id="lrerror" style="display: none; color: skyblue;"><small>Chose One</small></p>
+                    </div>
+                    <!-- Forgot Password -->
+                    <div>
+                        <a style="float: right; font-size: x-large; margin-bottom: 20px;" href="/fgtPass">Forgot Password??</a>
+                    </div>
+                    <button class="button button-block" type="submit" />Log In</button>
+                </form>
             </div>
-        
-            <div class="field-wrap">
-              <p style="color:white">
-                Last Name<span class="req">*</span>
-              </p>
-              <input type="text"required autocomplete="off" name="lastname" value="{{request.form.lastname}}"/>
+            <!-- Sign Up -->
+            <div id="signup">   
+                <h1>Sign Up for Free</h1>
+                <form id="signform" action="/logsign" method="post">
+                    <div class="top-row">
+                        <!-- FName -->
+                        <div class="field-wrap">
+                            <!-- <p style="color:white">First Name<span class="req">*</span></p> -->
+                            <input type="text" required autocomplete="off" placeholder="First Name*" name="firstname" value="{{request.form.firstname}}" />
+                        </div>
+                        <!-- MName -->
+                        <div class="field-wrap">
+                            <!-- <p style="color:white">Last Name<span class="req">*</span></p> -->
+                            <input type="text" autocomplete="off" placeholder="Middle Name" name="midname" value="{{request.form.midname}}"/>
+                        </div>
+                        <!-- LName -->
+                        <div class="field-wrap">
+                            <!-- <p style="color:white">Last Name<span class="req">*</span></p> -->
+                            <input type="text"required autocomplete="off" placeholder="Last Name*" name="lastname" value="{{request.form.lastname}}"/>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="field-wrap">
+                        <!-- <p style="color:white">Email Address<span class="req">*</span></p> -->
+                        <input type="email" required autocomplete="off" name="email" value="{{request.form.email}}" placeholder="Email Address*" />
+                    </div>
+                    <!-- Password -->
+                    <div class="field-wrap">
+                        <!-- <p style="color:white">Password<span class="req">*</span></p> -->
+                        <input id="spassword" type="password" name="password" placeholder="Password*" required autocomplete="off" value=""/>
+                    </div>
+                    <!-- Confirm Password -->
+                    <div class="field-wrap">
+                        <!-- <p style="color:white">Confirm Password<span class="req">*</span></p> -->
+                        <input id="cpassword" type="password" placeholder="Confirm Password*" required autocomplete="off" value=""/>
+                        <p id="cperror" style="display: none; color: skyblue;"><small>Passwords doesn't match </small></p>
+                    </div>
+                    <!-- Parent or Student -->
+                    <div class="field-wrap">
+                        <p style="color:white; float: left; margin-right: 20px;">Role<span class="req">*</span></p>
+                        <select id="srole" name="role" value="{{request.form.role}}" style="font-size: larger; margin-top: 5px;">
+                            <option value="0" hidden></option>
+                            <option value="parent">Parent</option>
+                            <option value="students">Student</option>
+                        </select>
+                        <p id="srerror" style="display: none; color: skyblue;"><small>Chose One</small></p>
+                    </div>
+                    <button type="submit" class="button button-block"/>Get Started</button>
+                </form>
             </div>
-          </div>
+        </div><!-- tab-content -->
+    </div> <!-- /form -->
+{% endblock %}
 
-          <div class="field-wrap">
-            <p style="color:white">
-              Email Address<span class="req">*</span>
-            </p>
-            <input type="email" required autocomplete="off" name="email" value="{{request.form.email}}"/>
-          </div>
-          
-          <div class="field-wrap">
-            <p style="color:white">
-              Set Password<span class="req">*</span>
-            </p>
-            <input type="password" name="passwd" required autocomplete="off" value="{{request.form.passwd}}"/>
-          </div>  
-          <button type="submit" class="button button-block"/>Get Started</button>
-          {% if error %}
-            <p style="color:skyblue"><strong>Error:</strong> {{ error }}</p>
-          {% endif %}
-          </form>
-
-        </div>
-        
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
-<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
-<script src="{{url_for('static',filename='js/logsign.js')}}"></script>
-</body>
-</html>
+{% block scripts %}
+    <script src="{{url_for('static',filename='js/logsign.js')}}"></script>
+{% endblock %}
