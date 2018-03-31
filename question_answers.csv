@@ -1,0 +1,271 @@
+id,question,answer,wrong_answers,difficulty,subject
+1,Which company did Valve cooperate with in the creation of the Vive?,HTC,"['Oculus', 'Google', 'Razer']",1,General Knowledge
+2,What&#039;s the name of Batman&#039;s  parents?,Thomas &amp; Martha,"['Joey &amp; Jackie', 'Jason &amp; Sarah', 'Todd &amp; Mira']",1,General Knowledge
+3,What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?,Demolition,"['The Dream Team', 'The Bushwhackers', 'The British Bulldogs']",1,General Knowledge
+4,What name represents the letter &quot;M&quot; in the NATO phonetic alphabet?,Mike,"['Matthew', 'Mark', 'Max']",1,General Knowledge
+5,What is the first book of the Old Testament?,Genesis,"['Exodus', 'Leviticus', 'Numbers']",1,General Knowledge
+6,"In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",Key,"['Sword', 'Pen', 'Cellphone']",1,General Knowledge
+7,"Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",Cabbage Patch Kids,"['Transformers', 'Care Bears', 'Rubik&rsquo;s Cube']",1,General Knowledge
+8,"In past times, what would a gentleman keep in his fob pocket?",Watch,"['Money', 'Keys', 'Notebook']",1,General Knowledge
+9,How would one say goodbye in Spanish?,Adi&oacute;s,"[' Hola', 'Au Revoir', 'Salir']",1,General Knowledge
+10,"On a dartboard, what number is directly opposite No. 1?",19,"['20', '12', '15']",1,General Knowledge
+11,What word represents the letter &#039;T&#039; in the NATO phonetic alphabet?,Tango,"['Target', 'Taxi', 'Turkey']",1,General Knowledge
+12,Which American president appears on a one dollar bill?,George Washington,"['Thomas Jefferson', 'Abraham Lincoln', 'Benjamin Franklin']",1,General Knowledge
+13,What is the name of the Jewish New Year?,Rosh Hashanah,"['Elul', 'New Year', 'Succoss']",1,General Knowledge
+14,Which one of the following rhythm games was made by Harmonix?,Rock Band,"['Meat Beat Mania', 'Guitar Hero Live', 'Dance Dance Revolution']",1,General Knowledge
+15,"What type of animal was Harambe, who was shot after a child fell into it&#039;s enclosure at the Cincinnati Zoo?",Gorilla,"['Tiger', 'Panda', 'Crocodile']",1,General Knowledge
+16,How many colors are there in a rainbow?,7,"['8', '9', '10']",1,General Knowledge
+17,Red Vines is a brand of what type of candy?,Licorice,"['Lollipop', 'Chocolate', 'Bubblegum']",1,General Knowledge
+18,What is on display in the Madame Tussaud&#039;s museum in London?,Wax sculptures,"['Designer clothing', 'Unreleased film reels', 'Vintage cars']",1,General Knowledge
+19,Which of these colours is NOT featured in the logo for Google?,Pink,"['Yellow', 'Blue', 'Green']",1,General Knowledge
+20,What is the French word for &quot;hat&quot;?,Chapeau,"['Bonnet', ' &Eacute;charpe', ' Casque']",1,General Knowledge
+21,Five dollars is worth how many nickles?,100,"['50', '25', '69']",1,General Knowledge
+22,Who is depicted on the US hundred dollar bill?,Benjamin Franklin,"['George Washington', 'Abraham Lincoln', 'Thomas Jefferson']",1,General Knowledge
+23,What do the letters in the GMT time zone stand for?,Greenwich Mean Time,"['Global Meridian Time', 'General Median Time', 'Glasgow Man Time']",1,General Knowledge
+24,Which American-owned brewery led the country in sales by volume in 2015?,"D. G. Yuengling and Son, Inc","['Anheuser Busch', 'Boston Beer Company', 'Miller Coors']",1,General Knowledge
+25,"According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;",Truth,"['Answer', 'Cause', 'Source']",1,General Knowledge
+26,"The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;",Print,"['Digest', 'Look', 'Read']",1,General Knowledge
+27,Which restaurant&#039;s mascot is a clown?,McDonald&#039;s,"['Whataburger', 'Burger King', 'Sonic']",1,General Knowledge
+28,Which of the following card games revolves around numbers and basic math?,Uno,"['Go Fish', 'Twister', 'Munchkin']",1,General Knowledge
+29,What machine element is located in the center of fidget spinners?,Bearings,"['Axles', 'Gears', 'Belts']",1,General Knowledge
+30,Which of the following presidents is not on Mount Rushmore?,John F. Kennedy,"['Theodore Roosevelt', 'Abraham Lincoln', 'Thomas Jefferson']",1,General Knowledge
+31,This field is sometimes known as &ldquo;The Dismal Science.&rdquo;,Economics,"['Philosophy', 'Politics', 'Physics']",2,General Knowledge
+32,Rolex is a company that specializes in what type of product?,Watches,"['Cars', 'Computers', 'Sports equipment']",2,General Knowledge
+33,What is a &quot;dakimakura&quot;?,A body pillow,"['A Chinese meal, essentially composed of fish', 'A yoga posture', 'A word used to describe two people who truly love each other']",2,General Knowledge
+34,After how many years would you celebrate your crystal anniversary?,15,"['20', '10', '25']",2,General Knowledge
+35,Who is a co-founder of music streaming service Spotify?,Daniel Ek,"['Sean Parker', 'Felix Miller', 'Michael Breidenbruecker']",2,General Knowledge
+36,What is the unit of currency in Laos?,Kip,"['Ruble', 'Konra', 'Dollar']",2,General Knowledge
+37,What alcoholic drink is mainly made from juniper berries?,Gin,"['Vodka', 'Rum', 'Tequila']",2,General Knowledge
+38,Which Italian automobile manufacturer gained majority control of U.S. automobile manufacturer Chrysler in 2011?,Fiat,"['Maserati', 'Alfa Romeo', 'Ferrari']",2,General Knowledge
+39,What is the name given to Indian food cooked over charcoal in a clay oven?,Tandoori,"['Biryani', 'Pani puri', 'Tiki masala']",2,General Knowledge
+40,What is the German word for &quot;spoon&quot;?,L&ouml;ffel,"['Gabel', 'Messer', 'Essst&auml;bchen']",2,General Knowledge
+41,What is the romanized Japanese word for &quot;university&quot;?,Daigaku,"['Toshokan', 'Jimusho', 'Shokudou']",2,General Knowledge
+42,What is the Swedish word for &quot;window&quot;?,F&ouml;nster,"['H&aring;l', 'Sk&auml;rm', 'Ruta']",2,General Knowledge
+43,What is the Italian word for &quot;tomato&quot;?,Pomodoro,"['Aglio', 'Cipolla', 'Peperoncino']",2,General Knowledge
+44,"What country saw a world record 315 million voters turn out for elections on May 20, 1991?",India,"['United States of America', 'Soviet Union', 'Poland']",2,General Knowledge
+45,The term &quot;scientist&quot; was coined in which year?,1833,"['1933', '1942', '1796']",2,General Knowledge
+46,"According to the United States&#039; CDC, one in how many Americans die annually due to smoking?",Five,"['Twenty', 'Ten', 'One hundred']",2,General Knowledge
+47,What is a dead mall?,A mall with high vacancy rates or low consumer foot traffic,"['A mall with no stores', 'A mall that has been condemed', 'A mall after business hours']",2,General Knowledge
+48,What character was once considered to be the 27th letter of the alphabet?,Ampersand,"['Interrobang', 'Tilde', 'Pilcrow']",2,General Knowledge
+49,"The new One World Trade Center in Manhattan, New York City was designed by which architect? ",David Childs,"['Bjarke Ingels', 'Michael Arad', 'Fumihiko Maki']",2,General Knowledge
+50,Which of the following carbonated soft drinks were introduced first?,Dr. Pepper,"['Coca-Cola', 'Sprite', 'Mountain Dew']",2,General Knowledge
+51,What year was Apple Inc. founded?,1976,"['1978', '1980', '1974']",2,General Knowledge
+52,What was Mountain Dew&#039;s original slogan?,Yahoo! Mountain Dew... It&#039;ll tickle your innards!,"['Give Me A Dew', 'Do The Dew', 'Get&#039; that barefoot feelin&#039; drinkin&#039; Mountain Dew']",2,General Knowledge
+53,Which iconic Disneyland attraction was closed in 2017 to be remodeled as a &quot;Guardians of the Galaxy&quot; themed ride?,Twilight Zone Tower of Terror,"['The Haunted Mansion', 'Pirates of the Caribbean', 'Peter Pan&#039;s Flight']",2,General Knowledge
+54,What is the Portuguese word for &quot;Brazil&quot;?,Brasil,"['Brazil', 'Brasilia', 'Bras&iacute;l']",2,General Knowledge
+55,Where does water from Poland Spring water bottles come from?,"Maine, United States","['Hesse, Germany', 'Masovia, Poland', 'Bavaria, Poland']",2,General Knowledge
+56,What is a Burgee?,A flag,"['A rope', 'A window', 'A type of food']",2,General Knowledge
+57,Who invented Pastafarianism?,Bobby Henderson,"['Eric Tignor', 'Bill Nye', 'Zach Soldi']",2,General Knowledge
+58,"In a 1994 CBS interview, Microsoft co-founder Bill Gates performed what unusual trick on camera?",Jumping over an office chair,"['Jumping backwards over a desk', 'Standing on his head', 'Typing on a keyboard during a handstand']",2,General Knowledge
+59,Earl Grey tea is black tea flavoured with what?,Bergamot oil,"['Lavender', 'Vanilla', 'Honey']",2,General Knowledge
+60,The website &quot;Shut Up &amp; Sit Down&quot; reviews which form of media?,Board Games,"['Television Shows', 'Video Games', 'Films']",2,General Knowledge
+61,Electronic music producer Kygo&#039;s popularity skyrocketed after a certain remix. Which song did he remix?,Ed Sheeran - I See Fire,"['Marvin Gaye - Sexual Healing', 'Coldplay - Midnight', 'a-ha - Take On Me']",3,General Knowledge
+62,"What type of dog is &#039;Handsome Dan&#039;, the mascot of Yale University?",Bulldog,"['Yorkshire Terrier', 'Boxer', 'Pug']",3,General Knowledge
+63,What is the airspeed velocity of an unladen swallow?,24 MPH,"['15 MPH', '20 MPH', '200 MPH']",3,General Knowledge
+64,The words &quot;bungalow&quot; and &quot;shampoo&quot; originate from the languages of which country?,India,"['Papua New Guinea', 'Ethiopia', 'China']",3,General Knowledge
+65,When was &quot;YouTube&quot; founded?,"February 14, 2005","['May 22, 2004', 'September 12, 2005', 'July 19, 2009']",3,General Knowledge
+66,"Before the 19th Century, the &quot;Living Room&quot; was originally called the...",Parlor,"['Open Room', 'Sitting Room', 'Loft']",3,General Knowledge
+67,What year was Queen Elizabeth II born?,1926,"['1923', '1929', '1930']",3,General Knowledge
+68,Which film star has his statue in Leicester Square?,Charlie Chaplin,"['Paul Newman', 'Rowan Atkinson ', 'Alfred Hitchcock']",3,General Knowledge
+69,Which of the following chemicals are found in eggplant seeds?,Nicotine,"['Mescaline', 'Cyanide', 'Psilocybin']",3,General Knowledge
+70,Sciophobia is the fear of what?,Shadows,"['Eating', 'Bright lights', 'Transportation']",3,General Knowledge
+71,Which of the following is an existing family in &quot;The Sims&quot;?,The Goth Family,"['The Family', 'The Simoleon Family', 'The Proud Family']",3,General Knowledge
+72,Which of these banks are NOT authorized to issue currency notes in Hong Kong?,OCBC,"['HSBC', 'Standard Chartered', 'Bank of China']",3,General Knowledge
+73,What is the romanized Chinese word for &quot;airplane&quot;?,Feiji,"['Qiche', 'Zongxian', 'Huojian']",3,General Knowledge
+74,What is the romanized Korean word for &quot;heart&quot;?,Simjang,"['Aejeong', 'Jeongsin', 'Segseu']",3,General Knowledge
+75,Which musician has collaborated with American producer Porter Robinson and released the 2016 song &quot;Shelter&quot;?,Madeon,"['Mat Zo', 'deadmau5', 'Zedd']",3,General Knowledge
+76,The Swedish word &quot;Grunka&quot; means what in English?,Thing,"['People', 'Place', 'Pineapple']",3,General Knowledge
+77,Disney&#039;s Haunted Mansion is home to a trio of Hitchhiking Ghosts. Which of these is NOT one of them?,Harry,"['Gus', 'Phineas', 'Ezra']",3,General Knowledge
+78,How long did it take the motorized window washers of the original World Trade Center to clean the entire exterior of the building?,1 Month,"['3 Weeks', '1 Week', '2 Months']",3,General Knowledge
+79,Which of the following languages does NOT use gender as a part of its grammar?,Turkish,"['German', 'Danish', 'Polish']",3,General Knowledge
+80,Which one of these Swedish companies was founded in 1943?,IKEA,"['H &amp; M', 'Lindex', 'Clas Ohlson']",3,General Knowledge
+81,How many calories are in a 355 ml can of Pepsi Cola?,150,"['200', '100', '155']",3,General Knowledge
+82,What year was the RoboSapien toy robot released?,2004,"['2000', '2001', '2006']",3,General Knowledge
+83,"According to Fair Works Australia, how long do you have to work to get Long Service Leave?",7 years,"['2 years', '8 years', '6 months']",3,General Knowledge
+84,"According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",28%,"['13%', '20%', '7%']",3,General Knowledge
+85,What was Bank of America originally established as?,Bank of Italy,"['Bank of Long Island', 'Bank of Pennsylvania', 'Bank of Charlotte']",3,General Knowledge
+86,"What does the Latin phrase &quot;Veni, vidi, vici&quot; translate into English?","I came, I saw, I conquered","['See no evil, hear no evil, speak no evil', 'Life, liberty, and happiness', 'Past, present, and future']",3,General Knowledge
+87,Virtual reality company Oculus VR lost which of it&#039;s co-founders in a freak car accident in 2013?,Andrew Scott Reisse,"['Nate Mitchell', 'Jack McCauley', 'Palmer Luckey']",3,General Knowledge
+88,Who founded the Khan Academy?,Sal Khan,"['Ben Khan', 'Kitt Khan', 'Adel Khan']",3,General Knowledge
+89,"In flight systems, what does the initialism &quot;TCAS&quot; stand for?",Traffic Collision Avoidance System,"['Traffic Communication Alert System', 'Traffic Configuration Alignment System', 'Traffic Call-sign Abbreviation System']",3,General Knowledge
+90,"If someone said &quot;you are olid&quot;, what would they mean?",You smell extremely unpleasant.,"['You are out of shape/weak.', 'Your appearance is repulsive.', 'You are incomprehensible/an idiot.']",3,General Knowledge
+91,Which one of these was not a beach landing site in the Invasion of Normandy?,Silver,"['Gold', 'Juno', 'Sword']",1,History
+92,What was William Frederick Cody better known as?,Buffalo Bill,"['Billy the Kid', 'Wild Bill Hickok', 'Pawnee Bill']",1,History
+93,Who discovered Penicillin?,Alexander Flemming,"['Marie Curie', 'Alfred Nobel', 'Louis Pasteur']",1,History
+94,How many manned moon landings have there been?,6,"['1', '3', '7']",1,History
+95,The idea of Socialism was articulated and advanced by whom?,Karl Marx,"['Vladimir Lenin', 'Joseph Stalin', 'Vladimir Putin']",1,History
+96,In what year did the Wall Street Crash take place?,1929,"['1932', '1930', '1925']",1,History
+97,"During WWII, in 1945, the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?",Nagasaki,"['Kawasaki', 'Tokyo', 'Kagoshima']",1,History
+98,Which of the following African countries was most successful in resisting colonization?,Ethiopia,"['C&ocirc;te d&rsquo;Ivoire', 'Congo', 'Namibia']",1,History
+99,Which of the following ancient peoples was NOT classified as Hellenic (Greek)?,Illyrians,"['Dorians', 'Achaeans', 'Ionians']",1,History
+100,"Which famous world leader is famed for the saying, &quot;Let them eat cake&quot;, yet is rumored that he/she never said it at all?",Marie Antoinette,"['Czar Nicholas II', 'Elizabeth I', 'Henry VIII']",1,History
+101,The original Roman alphabet lacked the following letters EXCEPT:,X,"['W', 'U', 'J']",1,History
+102,Which of these countries remained neutral during World War II?,Switzerland,"['United Kingdom', 'France', 'Italy']",1,History
+103,The collapse of the Soviet Union took place in which year?,1991,"['1992', '1891', '1990']",1,History
+104,What was Manfred von Richthofen&#039;s nickname?,The Red Baron,"['The High Flying Ace', 'The Blue Serpent ', 'The Germany Gunner']",1,History
+105,In which year did the Invasion of Kuwait by Iraq occur?,1990,"['1992', '1988', '1986']",1,History
+106,When did the Battle of the Somme begin?,"July 1st, 1916","['August 1st, 1916', 'July 2nd, 1916', 'June 30th, 1916']",1,History
+107,Who was the first president of the United States?,George Washington,"['James Madison', 'Thomas Jefferson', 'James K. Polk']",1,History
+108,"In 1720, England was in massive debt, and became in involved in the South Sea Bubble. Who was the main mastermind behind it?",John Blunt,"['Daniel Defoe', 'Robert Harley', 'John Churchill']",1,History
+109,When was Google founded?,"September 4, 1998","['October 9, 1997', 'December 12, 1989', 'Feburary 7th, 2000']",1,History
+110,Who was the Prime Minister of Japan when Japan declared war on the US?,Hideki Tojo,"['Michinomiya Hirohito', 'Isoroku Yamamoto', 'Fumimaro Konoe']",1,History
+111,What was the first sport to have been played on the moon?,Golf,"['Football', 'Tennis', 'Soccer']",1,History
+112,Who was the first prime minister of Canada?,John Macdonald,"['John Abbott', 'Alexander Mackenzie', 'Robert Borden']",1,History
+113,How was Socrates executed?,Poison,"['Decapitation', 'Firing squad', 'Crucifixion ']",1,History
+114,How long did World War II last?,6 years,"['4 years', '5 years', '7 years']",1,History
+115,Which of the following countries was not an axis power during World War II?, Soviet Union,"['Italy', 'Germany', 'Japan']",1,History
+116,"In 1939, Britain and France declared war on Germany after it invaded which country?",Poland,"['Czechoslovakia', 'Austria', 'Hungary']",1,History
+117,"Who was among those killed in the 2010 Smolensk, Russia plane crash tragedy?",The Polish President,"['Pope John Paul II', 'Bang-Ding Ow', 'Albert Putin']",1,History
+118,To what political party did Abraham Lincoln belong when elected POTUS?,Republican,"['Democrat', 'Independent', 'Whig']",1,History
+119,These two countries held a commonwealth from the 16th to 18th century.,Poland and Lithuania,"['Hutu and Rwanda', 'North Korea and South Korea', 'Bangladesh and Bhutan']",1,History
+120,How old was Adolf Hitler when he died?,56,"['43', '65', '47']",1,History
+121,In what year did Neil Armstrong and Buzz Aldrin land on the moon?,1969,"['1965', '1966', '1973']",2,History
+122," What Russian automatic gas-operated assault rifle was developed in the Soviet Union in 1947, and is still popularly used today?",AK-47,"['RPK', 'M16', 'MG 42']",2,History
+123,America&#039;s Strategic Defense System during the Cold War was nicknamed after this famous movie.,Star Wars,"['Jaws', 'Blade Runner', 'Alien']",2,History
+124,"The Tsar Bomba, the most powerful nuclear bomb ever tested, had a yield of 50 megatons but theoretically had a maximum yield of how much?",100 Megatons,"['200 Megatons', '75 Megatons', '150 Megatons']",2,History
+125,What was the capital of South Vietnam before the Vietnam War?,Saigon,"['Ho Chi Minh City', 'Hanoi', 'Hue']",2,History
+126,Who was the first explorer to sail to North America?,Leif Erikson,"['Christopher Columbus', 'Amerigo Vespucci', 'Ferdinand Magellan']",2,History
+127,Which of his six wives was Henry VIII married to the longest?,Catherine of Aragon,"['Anne Boleyn', 'Jane Seymour', 'Catherine Parr']",2,History
+128,Which country had an &quot;Orange Revolution&quot; between 2004 and 2005?,Ukraine,"['Belarus', 'Latvia', 'Lithuania']",2,History
+129,The Herero genocide was perpetrated in Africa by which of the following colonial nations?,Germany,"['Britain', 'Belgium', 'France']",2,History
+130,Which of the following battles is often considered as marking the beginning of the fall of the Western Roman Empire?,Battle of Adrianople,"['Battle of Thessalonica', 'Battle of Pollentia', 'Battle of Constantinople']",2,History
+131,"One of the deadliest pandemics, the &quot;Spanish Flu&quot;, killed off what percentage of the human world population at the time?",3 to 6 percent,"['6 to 10 percent', '1 to 3 percent', 'less than 1 percent']",2,History
+132,Which of the following Assyrian kings did NOT rule during the Neo-Assyrian Empire?,Shamshi-Adad III,"['Shalmaneser V', 'Esharhaddon', 'Ashur-nasir-pal II']",2,History
+133,Which infamous European traitor was known as &quot;the last person to enter Parliament with honest intentions&quot;?,Guy Fawkes,"['Robert Catesby', 'Francis Tresham', 'Everard Digby']",2,History
+134,When was the United States National Security Agency established?,"November 4, 1952","['July 26, 1908', ' July 1, 1973', ' November 25, 2002']",2,History
+135,On which day did the attempted coup d&#039;etat of 1991 in the Soviet Union begin?,August 19,"['August 21', 'December 26', 'December 24']",2,History
+136,What year did the Battle of Agincourt take place?,1415,"['1463', '1401', '1422']",2,History
+137,When did the Battle of the Bulge end?,"January 25, 1945","['August 6, 1945', 'December 7, 1941', 'December 16, 1944']",2,History
+138,What year were the Marian Reforms instituted in the Roman Republic?,107 BCE,"['42 BCE', '264 BCE', '102 CE']",2,History
+139,What nationality was sultan Saladin?,Kurdish,"['Arab', 'Egyptian', 'Syrian']",2,History
+140,Which WWII tank ace is credited with having destroyed the most tanks?,Kurt Knispel,"['Michael Wittmann', 'Walter Kniep', 'Otto Carius']",2,History
+141,What is the oldest US state?,Delaware,"['Rhode Island', 'Maine', 'Virginia']",2,History
+142,What is the mnemonic device for remembering the fates of the wives of Henry VIII?,"Divorced, Beheaded, Died, Divorced, Beheaded, Survived","['Beheaded, Died, Divorced, Divorced, Beheaded, Survived', 'Died, Beheaded, Divorced, Beheaded, Survived, Divorced', 'Survived, Beheaded, Died, Divorced, Divorced, Beheaded']",2,History
+143,When did Norway get its constitution?,1814,"['1932', '1905', '1854']",2,History
+144,What was the bloodiest single-day battle during the American Civil War?,The Battle of Antietam,"['The Siege of Vicksburg', 'The Battle of Gettysburg', 'The Battles of Chancellorsville']",2,History
+145,In what year did the First World War end?,1918,"['1914', '1916', '1912']",2,History
+146,"Which U.S. president took part in the Potsdam Conference, where the Allies reached a peace settlement with Germany?",Harry S. Truman,"['Dwight D. Eisenhower', 'Franklin D. Roosevelt', 'Herbert Hoover']",2,History
+147,In what year did Kentucky become the 15th state to join the union?,1792,"['1782', '1798', '1788']",2,History
+148,Which of the following countries was the first to send an object into space?,Germany,"['USA', 'Russia', 'China']",2,History
+149,"In 1961, an American B-52 aircraft crashed and nearly detonated two 4mt nuclear bombs over which US city?","Goldsboro, North Carolina","['Hicksville, New York', 'Jacksonville, Florida', 'Conway, Arkansas']",2,History
+150,The minigun was designed in 1960 by which manufacturer.,General Electric,"['Colt Firearms', 'Heckler &amp; Koch', 'Sig Sauer']",2,History
+151,The seed drill was invented by which British inventor?,Jethro Tull,"['Charles Babbage', 'Isaac Newton', 'J.J Thomson']",3,History
+152,Pianist Fr&eacute;d&eacute;ric Chopin was a composer of which musical era?,Romantic,"['Classic', 'Baroque', 'Renaissance']",3,History
+153,Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?,Battle of Midway,"['Attack on Truk Island', 'Attack on Pearl Harbor', 'Battle of the Coral Sea']",3,History
+154,"In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",John and Mary,"['Joseph and Catherine', 'William and Elizabeth', 'George and Anne']",3,History
+155,Spain was formed in 1469 with the marriage of Isabella I of Castile and Ferdinand II of what other Iberian kingdom?,Aragon,"['Galicia', 'Le&oacute;n', 'Navarre']",3,History
+156,What was the name of the spy ring that helped the United States win the Revolutionary War?,Culper Ring,"['New York Spy Ring', 'Washington&#039;s Spies', 'Unnamed']",3,History
+157,What year was Canada founded in?,1867,"['1798', '1859', '1668']",3,History
+158,What age was King Henry V when he died?,36,"['62', '87', '73']",3,History
+159,When did Canada leave the confederation to become their own nation?,"July 1st, 1867","['July 1st, 1763', 'July 1st, 1832', 'July 1st, 1902']",3,History
+160,When was the SS or Schutzstaffel established?,"April 4th, 1925","['September 1st, 1941', 'March 8th, 1935', 'February 21st, 1926']",3,History
+161,During the Wars of the Roses (1455 - 1487) which Englishman was dubbed &quot;the Kingmaker&quot;?,Richard Neville,"['Richard III', 'Henry V', 'Thomas Warwick']",3,History
+162,Bohdan Khmelnytsky was which of the following?,Leader of the Ukrainian Cossacks,"['General Secretary of the Communist Party of the USSR', 'Prince of Wallachia', 'Grand Prince of Novgorod']",3,History
+163,Which one of these rulers did not belong to the Habsburg dynasty?,Philip V,"['Charles V', 'Philip II', 'Francis Joseph']",3,History
+164,"During the Roman Triumvirate of 42 BCE, what region of the Roman Republic was given to Lepidus?",Hispania ,"['Italia', 'Gallia', 'Asia']",3,History
+165,The Second Boer War in 1899 was fought where?,South Africa,"['Argentina', 'Nepal', 'Bulgaria']",3,History
+166,In which year did the Tokyo Subway Sarin Attack occur?,1995,"['2001', '2011', '1991']",3,History
+167,What was the real name of the Albanian national leader Skanderbeg?,Gjergj Kastrioti,"['Diturak Zhulati', 'Iskander Bejko', 'Mirash Krasniki']",3,History
+168,Who invented the &quot;Flying Shuttle&quot; in 1738; one of the key developments in the industrialization of weaving?,John Kay,"['James Hargreaves', 'Richard Arkwright', 'John Deere']",3,History
+169,The Hagia Sophia was commissioned by which emperor of the Byzantine Empire?,Justinian I,"['Constantine IV', 'Arcadius', 'Theodosius the Great']",3,History
+170,"During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",Nationalist Spain,"['Republican Spain', 'Popular Front', 'Papal State']",3,History
+171,The Battle of Hastings was fought in which year?,1066,"['911', '1204', '1420']",3,History
+172,Who was the President of the United States during the signing of the Gadsden Purchase?,Franklin Pierce,"['Andrew Johnson', 'Abraham Lincoln', 'James Polk']",3,History
+173,"When was the city of Rome, Italy founded?",753 BCE,"['902 BCE', '524 BCE', '697 BCE']",3,History
+174,How many women joined the United States Armed Services during World War II?,"350,000","['225,000', '100,000', '500,000']",3,History
+175,"What was the code name for the Allied invasion of Southern France on August 15th, 1944?",Operation Dragoon,"['Operation Overlord', 'Operation Market Garden', 'Operation Torch']",3,History
+176,What was the aim of the &quot;Umbrella Revolution&quot; in Hong Kong in 2014?,Genuine universal suffrage,"['Gaining Independence', 'Go back under British Rule', 'Lower taxes']",3,History
+177,What was the name of the German offensive operation in October 1941 to take Moscow before winter?,Operation Typhoon,"['Operation Sunflower', 'Operation Barbarossa', 'Case Blue']",3,History
+178,When was the &quot;Siege of Leningrad&quot; lifted during World War II?,January 1944,"['September 1943', 'November 1943', 'March 1944']",3,History
+179,Which of the following was not one of Joseph Stalin&#039;s ten blows during World War II?,Vistula-Oder Offensive,"['Crimean Offensive', 'Leningrad-Novgorod Offensive', 'Operation Bagration']",3,History
+180,What did the abbreviation &quot;RMS&quot; stand for in the RMS Titanic in 1912?,Royal Mail Ship,"['Royal Majesty Service', 'Regular Maritime Schedule ', 'Regulated Maelstrom Sensor']",3,History
+181,Which Apollo mission was the first one to land on the Moon?,Apollo 11,"['Apollo 10', 'Apollo 9', 'Apollo 13']",1,Science & Nature
+182,Which of the following bones is not in the leg?,Radius,"['Patella', 'Tibia', 'Fibula ']",1,Science & Nature
+183,Which of these bones is hardest to break?,Femur,"['Cranium', 'Humerus', 'Tibia']",1,Science & Nature
+184,What is the largest animal currently on Earth?,Blue Whale,"['Orca', 'Colossal Squid', 'Giraffe']",1,Science & Nature
+185,Which element has the chemical symbol &#039;Fe&#039;?,Iron,"['Gold', 'Silver', 'Tin']",1,Science & Nature
+186,What name is given to all baby marsupials?,Joey,"['Calf', 'Pup', 'Cub']",1,Science & Nature
+187,Which type of rock is created by intense heat AND pressure?,Metamorphic,"['Sedimentary', 'Igneous', 'Diamond']",1,Science & Nature
+188,What is the &quot;powerhouse&quot; of the Eukaryotic animal cell?,Mitochondria,"['Nucleus', 'Chloroplast', 'Endoplasmic Reticulum']",1,Science & Nature
+189,"This element, when overcome with extreme heat and pressure, creates diamonds.",Carbon,"['Nitrogen', 'Oxygen', 'Hydrogen']",1,Science & Nature
+190,What is the elemental symbol for mercury?,Hg,"['Me', 'Mc', 'Hy']",1,Science & Nature
+191,How many planets are in our Solar System?,Eight,"['Nine', 'Seven', 'Ten']",1,Science & Nature
+192,What is the hottest planet in the Solar System?,Venus,"['Mars', 'Mercury', 'Jupiter']",1,Science & Nature
+193,Which gas forms about 78% of the Earth&rsquo;s atmosphere?,Nitrogen,"['Oxygen', 'Argon', 'Carbon Dioxide']",1,Science & Nature
+194,What is the standard SI unit for temperature?,Kelvin,"['Fahrenheit', 'Celsius', 'Rankine']",1,Science & Nature
+195,How many planets make up our Solar System?,8,"['7', '9', '6']",1,Science & Nature
+196,Which of the following blood vessels carries deoxygenated blood?,Pulmonary Artery,"['Pulmonary Vein', 'Aorta', 'Coronary Artery']",1,Science & Nature
+197,What is the chemical makeup of water?,H20,"['C12H6O2', 'CO2', 'H']",1,Science & Nature
+198,What is the primary addictive substance found in tobacco?,Nicotine,"['Cathinone', 'Ephedrine', 'Glaucine']",1,Science & Nature
+199,Alzheimer&#039;s disease primarily affects which part of the human body?,Brain,"['Lungs', 'Skin', 'Heart']",1,Science & Nature
+200,"What was the name of the first artificial Earth satellite, launched by the Soviet Union in 1957?",Sputnik 1,"['Soyuz 7K-OK', 'Zenit-2', 'Voskhod 3KV']",1,Science & Nature
+201,What does DNA stand for?,Deoxyribonucleic Acid,"['Deoxyribogenetic Acid', 'Deoxyribogenetic Atoms', 'Detoxic Acid']",1,Science & Nature
+202,The human heart has how many chambers?,4,"['2', '6', '3']",1,Science & Nature
+203,The element involved in making human blood red is which of the following?,Iron,"['Copper', 'Iridium', 'Cobalt']",1,Science & Nature
+204,The asteroid belt is located between which two planets?,Mars and Jupiter,"['Jupiter and Saturn', 'Mercury and Venus', 'Earth and Mars']",1,Science & Nature
+205,Human cells typically have how many copies of each gene?,2,"['1', '4', '3']",1,Science & Nature
+206,Which is the most abundant element in the universe?,Hydrogen,"['Helium', 'Lithium', 'Oxygen']",1,Science & Nature
+207,Which element has the highest melting point?,Carbon,"['Tungsten', 'Platinum', 'Osmium']",1,Science & Nature
+208,What is the standard atomic weight of a Plutonium nucleus?,244,"['94', '481', '128']",1,Science & Nature
+209,What is the unit of electrical resistance?,Ohm,"['Mho', 'Tesla', 'Joule']",1,Science & Nature
+210,What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?,Cat,"['Dog', 'Bat', 'Butterfly']",1,Science & Nature
+211,"Along with Oxygen, which element is primarily responsible for the sky appearing blue?",Nitrogen,"['Helium', 'Carbon', 'Hydrogen']",2,Science & Nature
+212,"The moons, Miranda, Ariel, Umbriel, Titania and Oberon orbit which planet?",Uranus,"['Jupiter', 'Venus', 'Neptune']",2,Science & Nature
+213,"The humerus, paired radius, and ulna come together to form what joint?",Elbow,"['Knee', 'Sholder', 'Ankle']",2,Science & Nature
+214,What was the first living creature in space?,Fruit Flies ,"['Monkey', 'Dog', 'Mouse']",2,Science & Nature
+215,Gannymede is the largest moon of which planet?,Jupiter,"['Uranus', 'Neptune', 'Mars']",2,Science & Nature
+216,"To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",8 Minutes,"['6 Minutes', '2 Minutes', '12 Minutes']",2,Science & Nature
+217,Which element has the atomic number of 7?,Nitrogen,"['Oxygen', 'Hydrogen', 'Neon']",2,Science & Nature
+218,Au on the Periodic Table refers to which element?,Gold,"['Silver', 'Oxygen', 'Nickel']",2,Science & Nature
+219,All the following metal elements are liquids at or near room temperature EXCEPT:,Beryllium,"['Gallium', 'Caesium', 'Mercury']",2,Science & Nature
+220,How many officially recognized dwarf planets in the solar system are named after Polynesian deities?,2,"['0', '1', '5']",2,Science & Nature
+221,The &quot;Tibia&quot; is found in which part of the body?,Leg,"['Arm', 'Hand', 'Head']",2,Science & Nature
+222,What is the chemical formula for ammonia?,NH3,"['CO2', 'NO3', 'CH4']",2,Science & Nature
+223,Where did the dog breed &quot;Chihuahua&quot; originate?,Mexico,"['France', 'Spain', 'Russia']",2,Science & Nature
+224,"What polymer is used to make CDs, safety goggles and riot shields?",Polycarbonate,"['Rubber', 'Nylon', 'Bakelite']",2,Science & Nature
+225,The medical condition osteoporosis affects which part of the body?,Bones,"['Skin', 'Brain', 'Heart']",2,Science & Nature
+226,What is the atomic number of the element Strontium?,38,"['73', '47', '11']",2,Science & Nature
+227,Which of these is NOT a part of the structure of a typical neuron?,Islets of Langerhans,"['Node of Ranvier', 'Schwann cell', 'Myelin sheath']",2,Science & Nature
+228,What term is best associated with Sigmund Freud?,Psychoanalysis,"['Cognitive-Behavioral Therapy', 'Theory of Gravity', 'Dialectical Behavior Therapy']",2,Science & Nature
+229,Which of these is a type of stretch/deep tendon reflex?,Ankle jerk reflex,"['Gag reflex', 'Pupillary light reflex', 'Scratch reflex']",2,Science & Nature
+230,What does the yellow diamond on the NFPA 704 fire diamond represent?,Reactivity,"['Health', 'Flammability', 'Radioactivity']",2,Science & Nature
+231,Which of these elements on the Periodic Table is a Noble Gas?,Neon,"['Potassium', 'Iodine', 'Colbalt']",2,Science & Nature
+232,Deuterium is an isotope of which element?,Hydrogen,"['Nitrogen', 'Helium', 'Neon']",2,Science & Nature
+233,Who made the discovery of X-rays?,Wilhelm Conrad R&ouml;ntgen,"['Thomas Alva Edison', 'James Watt', 'Albert Einstein']",2,Science & Nature
+234,What is radiation measured in?,Gray ,"['Watt', 'Decibel', 'Kelvin']",2,Science & Nature
+235,What is the unit of electrical capacitance?,Farad,"['Gauss', 'Henry', 'Watt']",2,Science & Nature
+236,Which desert is the only desert in the world where the &quot;Saguaro&quot; cactus grows indigenously?,The Sonoran Desert,"['The Gobi Desert', 'The Yuma Desert', 'The Arabian Desert']",2,Science & Nature
+237,"In Psychology, which need appears highest in the &quot;Maslow&#039;s hierarchy of needs&quot; pyramid?",Esteem,"['Love', 'Safety', 'Physiological']",2,Science & Nature
+238,What are human nails made of?,Keratin,"['Bone', 'Chitin', 'Calcium']",2,Science & Nature
+239,What is the largest living organism currently known to man?,Honey Fungus,"['Blue Whale', 'Redwood Tree', 'The Coral Reef']",2,Science & Nature
+240,"Which planet did the &quot;Viking 1&quot; spacecraft send surface images of, starting in 1976?",Mars,"['Saturn', 'Jupiter', 'Venus']",2,Science & Nature
+241,What is considered the rarist form of color blindness?,Blue,"['Red', 'Green', 'Purple']",3,Science & Nature
+242,Which of the following liquids is least viscous? Assume temperature is 25&deg;C.,Acetone,"['Water', 'Mercury', 'Benzene']",3,Science & Nature
+243,Which is the chemical name of H2O?,Dihydrogen Monoxide,"['Ammonium chloride', 'Anhydrous Sodium Carbonate', 'Manganese dioxide']",3,Science & Nature
+244,How many legs is it biologically impossible for a centipede to have?,100,"['26', '50', '74']",3,Science & Nature
+245,"What common name is given to the medial condition, tibial stress syndrome (MTSS)?",Shin Splints,"['Tennis Elbow', 'Carpal Tunnel', 'Housemaid&#039;s Knee']",3,Science & Nature
+246,What is the molecular formula of Glucose?,C6H12O6,"['C2H4O2', 'K+', 'CH4']",3,Science & Nature
+247,An organic compound is considered an alcohol if it has what functional group?,Hydroxyl,"['Carbonyl', 'Alkyl', 'Aldehyde']",3,Science & Nature
+248,All of the following human genetic haplogroup names are shared between Y-chromosome and mitochondrial DNA haplogroups EXCEPT:,Haplogroup U,"['Haplogroup L', 'Haplogroup T', 'Haplogroup J']",3,Science & Nature
+249,Which horizon in a soil profile consists of bedrock?,R,"['O', 'B', 'D']",3,Science & Nature
+250,If you planted the seeds of Quercus robur what would grow?,Trees,"['Flowers', 'Vegtables', 'Grains']",3,Science & Nature
+251,What is isobutylphenylpropanoic acid more commonly known as?,Ibuprofen,"['Morphine', 'Ketamine', 'Aspirin']",3,Science & Nature
+252,Which of these chemical compounds is NOT found in gastric acid?,Sulfuric acid,"['Hydrochloric acid', 'Potassium chloride', 'Sodium chloride']",3,Science & Nature
+253,What is the scientific name of the red fox?,Vulpes Vulpes,"['Vulpes Redus', 'Red Fox', 'Vulpes Vulpie']",3,Science & Nature
+254,Which of the following is NOT a real element?,Vitrainium,"['Praseodymium', 'Hassium', 'Lutetium']",3,Science & Nature
+255,Which one of these is scientific term for &quot;Brain Freeze&quot;?,Sphenopalatine Ganglioneuralgia,"['Hyacinthoides Italica', 'Amaranthus Retroflexus', 'Amblyomma Americanum']",3,Science & Nature
+256,&quot;The Big Bang Theory&quot; was first theorized by a priest of what religious ideology?,Catholic,"['Christian', 'Jewish', 'Islamic']",3,Science & Nature
+257,A comet&#039;s gaseous envelope (which creates the tail) is called what?,The coma,"['The wake', 'The backwash', 'The ablative']",3,Science & Nature
+258,What is the molecular formula of Ozone?,O3,"['C6H2O6', 'N2O', 'SO4']",3,Science & Nature
+259,The core of the Sun can reach which temperature?,27&deg; Million F (15&deg; Million C),"['938,000&deg; F (521093.3&deg; C)', '8&deg; Billion F (&deg;4.4 Billion C)', 'Absolute Zero (Both F and C)']",3,Science & Nature
+260,Which of these is a stop codon in DNA?,TAA,"['ACT', 'ACA', 'GTA']",3,Science & Nature
+261,"Which of the following plastic is commonly used for window frames, gutters and drain pipes?",Polyvinylchloride (PVC) ,"['Polyethylene (PE)', 'Polypropylene (PP)', 'Polystyrene (PS)']",3,Science & Nature
+262,What nucleotide pairs with guanine?,Cytosine,"['Thymine', 'Adenine', 'Uracil']",3,Science & Nature
+263,What genetic disease is caused by having an extra Y chromosome (XYY)?,Jacob&#039;s Syndrome,"['Klinefelter&#039;s Syndrome', 'Turner&#039;s Syndrome', 'Down Syndrome']",3,Science & Nature
+264,What does the term &quot;isolation&quot; refer to in microbiology?,"The separation of a strain from a natural, mixed population of living microbes","['A lack of nutrition in microenviroments', 'The nitrogen level in soil', 'Testing effects of certain microorganisms in an isolated enviroments, such as caves']",3,Science & Nature
+265,How much radiation does a banana emit?,0.1 Microsievert,"['0.3 Microsievert', '0.5 Microsievert', '0.7 Microsievert']",3,Science & Nature
+266,What is the unit of electrical inductance?,Henry,"['Weber', 'Coulomb', 'Mho']",3,Science & Nature
+267,Burning which of these metals will produce a bright white flame?,Magnesium,"['Copper', 'Lithium', 'Lead']",3,Science & Nature
+268,Muscle fiber is constructed of bundles small long organelles called what?,Myofibrils,"['Epimysium', 'Myofiaments', 'Myocardium']",3,Science & Nature
+269,Which of the following is NOT a word used to describe an earthquake?,Drop-slide,"['Foreshock', 'Strike-slip', 'Temblor']",3,Science & Nature
+270,What is the scientific name for the extinct hominin known as &quot;Lucy&quot;?,Australopithecus Afarensis,"['Australopithecus Africanus', 'Australopithecus Architeuthis', 'Australopithecus Antaris']",3,Science & Nature
