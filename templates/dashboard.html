@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
 
+{% block title %}
+  Logged in as {{ session['user'] }}
+{% endblock %}
 
+{% block stylesheets %}{% endblock %}
 
 {%block body %}
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <br>
 <section style="padding-top: 5%; padding-bottom: 4px;" class="content-section text-center">
 	<div class="jumbotron">
@@ -11,14 +14,21 @@
         <!-- question part -->
         <div style="background: white; color: black;" class="col-lg-6 mx-auto">
           <h2 style="padding-top: 20px">Question</h2>
-          <form action="/quesCheck/" style="margin-top: 110px;" method="post">
+          <form action="/dashboard" style="margin-top: 110px;" method="post">
             <div class="field-wrap">
               {% if question %}
               <label>
-                {{ question[1] }}
+                <strong>{{ question[1] }}</strong>
               </label>
-              <p>Hint : {{question[2]}}</p>
-              <input type="text" name="ans" required autocomplete="off" value="{{request.form.ans}}"/>
+              <!-- <p>Hint : {{question[2]}}</p>
+              <input type="text" name="ans" required autocomplete="off" value="{{request.form.ans}}"/> -->
+              <div>
+                {% for i in question[2] %}
+                  <label class="radio-inline" style="padding-right: 2%;">
+                    <input type="radio" name="ans" value="{{i}}">{{i}}
+                  </label>
+                {% endfor %}
+              </div>
               <input type="hidden" name="id" value="{{question[0]}}"/>
               <input type="hidden" name="difficulty" value="{{question[3]}}"/>
               <input type="hidden" name="subject" value="{{question[4]}}"/>
@@ -39,24 +49,33 @@
       </div>
     </div>
 </section>
-<script type="text/javascript">
-  var trace = {
-    x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 
-    y: {{solved}}, 
-    type: 'scatter'
-  };
-  var layout = {
-    width: 550,
-    height: 390,
-    title: 'Performance',
-    xaxis: {
-      title: 'No. of Questions'
-    },
-    yaxis: {
-      title: 'Accuracy'
-    }
-  };
-  data = [trace];
-  Plotly.newPlot('plot', data, layout);
-</script>>
+{% endblock %}
+
+{% block scripts %}
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript">
+    var trace = {
+      {% if session['solved'].__len__() != 0 %}
+        x: [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      y: {{session['solved']}}        
+      {% else %}
+        x: [0],
+        y: [0]
+      {% endif %}, 
+      type: 'scatter'
+    };
+    var layout = {
+      width: 550,
+      height: 390,
+      title: 'Performance',
+      xaxis: {
+        title: 'No. of Questions'
+      },
+      yaxis: {
+        title: 'Accuracy'
+      }
+    };
+    data = [trace];
+    Plotly.newPlot('plot', data, layout);
+  </script>
 {% endblock %}

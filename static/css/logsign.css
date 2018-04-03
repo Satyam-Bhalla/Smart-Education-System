@@ -26,7 +26,7 @@ a:hover {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
   max-width: 600px;
-  margin: 40px auto;
+  margin: 115px auto;
   border-radius: 4px;
   -webkit-box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
           box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -145,7 +145,7 @@ textarea {
 }
 .top-row > div {
   float: left;
-  width: 48%;
+  width: 30.67%;
   margin-right: 4%;
 }
 .top-row > div:last-child {

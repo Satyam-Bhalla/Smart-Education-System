@@ -1,0 +1,7 @@
+//handle role from signup
+//sign up according to role
+//on login determine if it is a parent or a student
+on dashboard
+	quesChech has to be repaired
+	student, questions will appear
+	parent, the latest result of their child will be displayed

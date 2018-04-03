@@ -26,14 +26,14 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0 0 25px;
 }
 
 @media (min-width: 768px) {
   p {
-    font-size: 18px;
+    font-size: 23px;
     line-height: 1.6;
     margin: 0 0 35px;
   }
