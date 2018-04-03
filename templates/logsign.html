@@ -40,9 +40,9 @@
                         <input type="password" id="lpassword" placeholder="Password" name="password" required autocomplete="off" value=""/>
                     </div>
                     <!-- Parent or Student -->
-                    <div class="field-wrap">
-                        <p style="color:white; float: left; margin-right: 20px;">Role<span class="req">*</span></p>
-                        <select id="lrole" name="role" value="{{request.form.role}}" style="font-size: larger; margin-top: 5px;">
+                    <div class="field-wrap form-group">
+                        <lable for="lrole" style="color:white; float: left; margin-right: 20px;">Role<span class="req">*</span></lable>
+                        <select id="lrole" class="form-control" name="role" value="{{request.form.role}}" style="font-size: larger; margin-top: 5px;">
                             <option value="0" hidden></option>
                             <option value="parent">Parent</option>
                             <option value="students">Student</option>
@@ -94,9 +94,9 @@
                         <p id="cperror" style="display: none; color: skyblue;"><small>Passwords doesn't match </small></p>
                     </div>
                     <!-- Parent or Student -->
-                    <div class="field-wrap">
-                        <p style="color:white; float: left; margin-right: 20px;">Role<span class="req">*</span></p>
-                        <select id="srole" name="role" value="{{request.form.role}}" style="font-size: larger; margin-top: 5px;">
+                    <div class="field-wrap form-group">
+                        <lable for="srole" style="color:white; float: left; margin-right: 20px;">Role<span class="req">*</span></lable>
+                        <select id="srole" class="form-control" name="role" value="{{request.form.role}}" style="font-size: larger; margin-top: 5px;">
                             <option value="0" hidden></option>
                             <option value="parent">Parent</option>
                             <option value="students">Student</option>
