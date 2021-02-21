@@ -2,7 +2,8 @@ from flask import Flask, render_template, redirect, url_for, request, session, f
 # from flask.ext.login import LoginManager, login_user, logout_user, current_user, login_required
 from wtforms import Form, StringField, BooleanField, TextField, PasswordField, validators
 # from passlib.hash import sha256_crypt
-from html.parser import HTMLParser
+# from html.parser import HTMLParser
+import html
 from connecting_db import Connection
 from os import urandom
 from ast import literal_eval
@@ -28,8 +29,7 @@ def tellQues(subject,diff=1):
             i[2].append(ra)
             shuffle(i[2])
             print(i)
-            h = HTMLParser()
-            i[1] = h.unescape(i[1])
+            i[1] = html.unescape(i[1])
             print(i)
             return i
     c.close()
